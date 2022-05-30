@@ -14,14 +14,13 @@ cinco = sumar1parcial 4
 sumar :: Integer -> Integer -> Integer
 sumar = (+)
 
-
 --Ejemplos aplicacion parcial
 max0 :: Integer -> Integer
 max0 = max 0
 
 maximoEntre5y0 :: Integer
-maximoEntre5y0= max0 5
+maximoEntre5y0 = max0 5
 
 -- Un mensaje sale 3 pesos por cada caracter
 precioDeMensaje :: String -> Int
-precioDeMensaje = (*3) . length
+precioDeMensaje = (* 3) . length

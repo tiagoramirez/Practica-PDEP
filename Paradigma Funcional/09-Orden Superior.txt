@@ -1,0 +1,13 @@
+Las funciones de orden superior son las que esperan una funcion por parametro
+Ejemplos:
+    -   Map
+    -   Filter
+    -   All
+    -   Any
+    -   . (composicion)
+    -   flip
+    -   foldl
+    -   foldr
+    -   foldl1
+    -   foldr1
+    -   $

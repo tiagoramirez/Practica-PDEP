@@ -37,12 +37,26 @@ personasMayoresA23 = filter ((> 23) . edadPersona) personas
 
 --sum
 totalEdadesPersonas :: Integer
-totalEdadesPersonas=sum edadesPersonas
+totalEdadesPersonas = sum edadesPersonas
 
 --length
 cantidadPersonas :: Int
-cantidadPersonas=length personas
+cantidadPersonas = length personas
 
 --elem
 existePersona :: Persona -> Bool
 existePersona persona = elem persona personas
+
+--any
+existeAlgunoMayor29 :: Bool
+existeAlgunoMayor29 = any ((> 29) . edadPersona) personas
+
+existeAlgunoMenor10 :: Bool
+existeAlgunoMenor10 = any ((< 10) . edadPersona) personas
+
+--all
+sonTodosMayoresA20 :: Bool
+sonTodosMayoresA20 = all ((> 20) . edadPersona) personas
+
+sonTodosMenoresA50 :: Bool
+sonTodosMenoresA50 = all ((< 50) . edadPersona) personas
