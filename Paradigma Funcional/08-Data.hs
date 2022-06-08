@@ -5,7 +5,7 @@ data Persona = Persona
     dni :: Integer,
     familia :: [String]
   }
-  deriving (Ord)
+  -- deriving (Ord) si quiero dejar el ord por defecto
 
 tiago :: Persona
 tiago =
@@ -33,3 +33,6 @@ instance Show Persona where
 
 instance Eq Persona where
   (==) persona otraPersona = (dni persona) == (dni otraPersona)
+
+instance Ord Persona where
+  compare persona otraPersona = compare (dni persona) (dni otraPersona)
